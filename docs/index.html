@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Welfare Checklist</title>
+
+    <script type="text/javascript">
+        function showFirstHideOthers(first, second, third) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+            document.getElementById(third).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio(first, second, third, radio){
+            showFirstHideOthers(first, second, third);
+            document.getElementById(radio).checked = true;
+        }
+    </script>
+
+    <noscript>
+        <h1 style="color:red">Please enable JavaScript to run this page.</h1>
+    </noscript>
+</head>
+<body>
+
+<h1>Animal Welfare Checklist</h1>
+
+<h2>1. How should welfare be measured?</h2>
+
+<h3>1.1 Which fundamental concept should be adopted?</h3>
+
+<table>
+    <tr>
+        <td><input id="radio-p1o1" onclick="showFirstHideOthers('papers-q1o1', 'papers-q1o2', 'papers-q1o3')" type="radio" name="welfare-measure"></td>
+        <td onclick="showFirstHideOthersSelectRadio('papers-q1o1', 'papers-q1o2', 'papers-q1o3', 'radio-p1o1')" style="padding-right:3em">Preferentialism <br/> (fulfilment of animals' preference determines welfare)</td>
+
+        <td><input id="radio-p1o2" onclick="showFirstHideOthers('papers-q1o2', 'papers-q1o1', 'papers-q1o3')" type="radio" name="welfare-measure"></td>
+        <td onclick="showFirstHideOthersSelectRadio('papers-q1o2', 'papers-q1o1', 'papers-q1o3', 'radio-p1o2')" style="padding-right:3em">Experimentalism <br/> (Feelings of pleasure or harm determine welfare)</td>
+
+        <td><input id="radio-p1o3" onclick="showFirstHideOthers('papers-q1o3', 'papers-q1o1', 'papers-q1o2')" type="radio" name="welfare-measure"></td>
+        <td onclick="showFirstHideOthersSelectRadio('papers-q1o3','papers-q1o1','papers-q1o2', 'radio-p1o3')" style="padding-right:3em">Objective-good <br/> (Availability of certain goods determines welfare)</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="papers-q1o1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://www.google.com">Paper A (2010):</a> only mentions preferences briefly, no formal analysis</td>
+    </tr>
+    <tr>
+        <td><a href="https://doi.org/10.1002/sys.21679">Paper B (2020):</a> best paper, I've ever read... (REALLY!)</td>
+    </tr>
+    <tr>
+        <td>Paper C (2023): that Fr.. khmm, paper.</td>
+    </tr>
+</table>
+
+<table id="papers-q1o2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Paper C (2023): that Fr.. khmm, paper.</td>
+    </tr>
+</table>
+
+<table id="papers-q1o3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://www.google.com">Paper A (2010):</a> only mentions preferences briefly, no formal analysis</td>
+    </tr>
+    <tr>
+        <td>Paper D (2024)</td>
+    </tr>
+</table>
+
+</body>
+</html>
