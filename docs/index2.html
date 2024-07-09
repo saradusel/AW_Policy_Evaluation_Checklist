@@ -119,14 +119,13 @@
 <table>
     <tr>
         <td><input id="r-12-1" onclick="showFirstHideOthers2('p-12-1', 'p-12-2', 'p-12-3')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity.</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
 
         <td><input id="r-12-2" onclick="showFirstHideOthers2('p-12-2', 'p-12-1', 'p-12-3')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity.</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
 
         <td><input id="r-12-3" onclick="showFirstHideOthers2('p-12-3', 'p-12-1', 'p-12-2')" type="radio" name="q12"></td>
         <td onclick="showFirstHideOthersSelectRadio2('p-12-3','p-12-1','p-12-2', 'r-12-3')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with different or equal welfare capacity.</td>
-
     </tr>
 </table>
 
@@ -170,8 +169,46 @@
     </tr>
 </table>
 
+<p></p>
+<p></p>
 
 <h3>1.3. Which indicators should be used to assess welfare?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-13-1" onclick="showFirstHideOthers2('p-13-1', 'p-13-2', 'p-13-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-13-1', 'p-13-2', 'p-13-3', 'r-13-1')" style="padding-right:3em"><b>Resource- or management-based indicators</b></td>
+
+        <td><input id="r-13-2" onclick="showFirstHideOthers2('p-13-2', 'p-13-1', 'p-13-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-13-2', 'p-13-1', 'p-13-3', 'r-13-2')" style="padding-right:3em"><b>Animal-based indicators: preferences</b></td>
+
+        <td><input id="r-13-3" onclick="showFirstHideOthers2('p-13-3', 'p-13-1', 'p-13-2')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-13-3','p-13-1','p-13-2', 'r-13-3')" style="padding-right:3em"><b>Animal-based indicators: other</b></td>
+
+    </tr>
+</table>
+
+<table id="p-13-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4309200">Eichner and Runkel (2022)</a>: Inverse of stocking density (approximated by units of land input per animal)
+            <br/><br/><a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a> based on <a href="https://link.springer.com/article/10.1007/s11367-017-1420-x">Scherer et al. (2018)</a>: Number of days on pasture (cattle), stocking density (broilers, laying hens, pigs), transport time (cattle, broilers, laying hens, pigs)
+            <br/><br/>Five Freedoms (degree of violation according to expert assessment): <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a></td>
+    </tr>
+</table>
+
+<table id="p-13-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Willingness to turn down feed for other resources (only general framework, no actual findings from animal experiments): <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>, <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>, <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>.</td>
+    </tr>
+</table>
+
+<table id="p-13-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>The five-freedoms expert assessment approach by <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>, and <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a> implicitly includes animal-based information.
+            <br/>Other than that, the classical animal-based indicators (e.g., lameness) have not yet been introduced into the economic frameworks for non-anthropocentric monetisation in CBA, or inclusion in SWF, of impacts on animals.<br/>This is a severe drawback. Yet, in theory, all approaches would be compatible with animal-based indicators, just this has not been done yet.
+            <br/><br/>Of note, the complex indicator list by <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a> serves to estimate welfare capacities, not actual welfare at a specific point in time. Welfare capacities could be combined with resource-, management- or animal-based assessments of actual welfare.</td>
+    </tr>
+</table>
 
 <h3>1.4. Does the measurement scale have a threshold below which life is not worth living? What is the welfare impact of slaughter and death in this context?</h3>
 
