@@ -16,6 +16,17 @@
             showFirstHideOthers(first, second, third, fourth);
             document.getElementById(radio).checked = true;
         }
+
+        function showFirstHideOthers(first, second, third) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+            document.getElementById(third).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio(first, second, third, radio){
+            showFirstHideOthers(first, second, third);
+            document.getElementById(radio).checked = true;
+        }
     </script>
 
     <noscript>
@@ -47,17 +58,17 @@
 
 <table>
     <tr>
-        <td><input id="r-11-1" onclick="showFirstHideOthers('p-11-1', 'p-11-2', 'p-11-3', , 'p-11-4')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4', 'r-11-1')" style="padding-right:3em"><b>Experimentalism / Hedonism</b> <br/> Welfare is determined by what the individual experiences.<br/>Most common form: hedonism (feelings of pleasure or harm/suffering determine welfare).</td>
+        <td><input id="r-11-1" onclick="showFirstHideOthers('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4', 'r-11-1')" style="padding-right:3em"><b>Experimentalism / Hedonism</b> <br/>Welfare is determined by what the individual experiences.<br/>Most common form: hedonism (feelings of pleasure or harm/suffering determine welfare).</td>
 
         <td><input id="r-11-2" onclick="showFirstHideOthers('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4', 'r-11-2')" style="padding-right:3em"><b>Experimentalism</b> <br/> Fulfilment of the individual’s own preferences determines welfare.</td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4', 'r-11-2')" style="padding-right:3em"><b>Experimentalism</b> <br/>Fulfilment of the individual’s own preferences determines welfare.</td>
 
         <td><input id="r-11-3" onclick="showFirstHideOthers('p-11-3', 'p-11-1', 'p-11-2', 'p-11-4')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-3','p-11-1','p-11-2', 'p-11-4' 'r-11-3')" style="padding-right:3em"><b>Objective-good</b> <br/> Availability of certain goods determines welfare.</td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-3','p-11-1','p-11-2', 'p-11-4', 'r-11-3')" style="padding-right:3em"><b>Objective-good</b> <br/>Availability of certain goods determines welfare.</td>
 
         <td><input id="r-11-4" onclick="showFirstHideOthers('p-11-4', 'p-11-1', 'p-11-2', 'p-11-3')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-4','p-11-1','p-11-2', 'p-11-3', 'r-11-4')" style="padding-right:3em"><b>Not specified</b> <br/> Approach is compatible with all concepts of welfare.</td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-4','p-11-1','p-11-2', 'p-11-3', 'r-11-4')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with all concepts of welfare.</td>
     </tr>
 </table>
 
@@ -104,6 +115,42 @@
 <p></p>
 
 <h3>1.2. Does the capacity for welfare differ between species?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-12-1" onclick="showFirstHideOthers('p-12-1', 'p-12-2', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity.</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
+
+        <td><input id="r-12-2" onclick="showFirstHideOthers('p-12-2', 'p-12-1', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity.</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
+
+        <td><input id="r-12-3" onclick="showFirstHideOthers('p-12-3', 'p-12-1', 'p-12-2')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-3','p-12-1','p-12-2', 'r-12-3')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with different or equal welfare capacity.</td>
+
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-12-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+<table id="p-12-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+<table id="p-12-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
 
 <h3>1.3. Which indicators should be used to assess welfare?</h3>
 
