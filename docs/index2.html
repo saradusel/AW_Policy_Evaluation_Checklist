@@ -12,19 +12,19 @@
             document.getElementById(fourth).style.display = 'none';
         }
 
-        function showFirstHideOthersSelectRadio(first, second, third, fourth, radio){
+        function showFirstHideOthersSelectRadio(first, second, third, fourth, radio) {
             showFirstHideOthers(first, second, third, fourth);
             document.getElementById(radio).checked = true;
         }
 
-        function showFirstHideOthers(first, second, third) {
+        function showFirstHideOthers2(first, second, third) {
             document.getElementById(first).style.display = '';
             document.getElementById(second).style.display = 'none';
             document.getElementById(third).style.display = 'none';
         }
 
-        function showFirstHideOthersSelectRadio(first, second, third, radio){
-            showFirstHideOthers(first, second, third);
+        function showFirstHideOthersSelectRadio2(first, second, third, radio) {
+            showFirstHideOthers2(first, second, third);
             document.getElementById(radio).checked = true;
         }
     </script>
@@ -118,14 +118,14 @@
 
 <table>
     <tr>
-        <td><input id="r-12-1" onclick="showFirstHideOthers('p-12-1', 'p-12-2', 'p-12-3')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity.</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
+        <td><input id="r-12-1" onclick="showFirstHideOthers2('p-12-1', 'p-12-2', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity.</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
 
-        <td><input id="r-12-2" onclick="showFirstHideOthers('p-12-2', 'p-12-1', 'p-12-3')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity.</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
+        <td><input id="r-12-2" onclick="showFirstHideOthers2('p-12-2', 'p-12-1', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity.</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
 
-        <td><input id="r-12-3" onclick="showFirstHideOthers('p-12-3', 'p-12-1', 'p-12-2')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-3','p-12-1','p-12-2', 'r-12-3')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with different or equal welfare capacity.</td>
+        <td><input id="r-12-3" onclick="showFirstHideOthers2('p-12-3', 'p-12-1', 'p-12-2')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-12-3','p-12-1','p-12-2', 'r-12-3')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with different or equal welfare capacity.</td>
 
     </tr>
 </table>
@@ -135,19 +135,38 @@
 
 <table id="p-12-1" style="border-spacing: 0 1em;display:none">
     <tr>
-        <td></td>
+        <td>Presuming hedonism, differences in the welfare capacity between species are justified with the biological underpinnings of pleasure and suffering in <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>; <a href="https://www.frontiersin.org/articles/10.3389/fanim.2022.1062458">Gaffney et al. (2023)</a>; <a href="https://rethinkpriorities.org/publications/differences-in-the-intensity-of-valenced-experience-across-species">Schukraft (2020a)</a>; <a href="https://www.researchwithrutgers.com/en/publications/public-policy-consequentialism-the-environment-and-nonhuman-anima">Budolfson and Spears (2020)</a>.
+            <br/>This may be related to differences in cognitive capacities (e.g., mental time travel), which may be positively or negatively correlated with welfare capacities, and/or to differences in emotional complexity (e.g., romantic love) (<a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer 2023</a>; <a href="https://rethinkpriorities.org/publications/differences-in-the-intensity-of-valenced-experience-across-species">Schukraft 2020a</a>).
+            <br/><a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a> checks one-by-one which of these cognitive or emotional features are present in different species and derives welfare capacities from this, while <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a>, and <a href="https://www.researchwithrutgers.com/en/publications/public-policy-consequentialism-the-environment-and-nonhuman-anima">Budolfson and Spears (2020)</a> rely on the number of cortical neurons to estimate welfare capacities.
+        <br/><br/><a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> assume different capacities within an objective-good or preferentialist concept of welfare.</td>
+    </tr>
+
+    <tr>
+        <td><b><u>Criticism:</u></b>
+            <br/>The number of cortical neurons as a basis for welfare capacities is strongly criticised (reviewed by <a href="https://forum.effectivealtruism.org/s/y5n47MfgrKvTLE3pw/p/Mfq7KxQRvkeLnJvoB">Shriver 2022</a>), and even those who apply it acknowledge this.
+            <br/>In the complex list by <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>, it can be criticised, based on <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022</a>) and <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a>, that some of the items are irrelevant for experiences of pleasure and harm across species (e.g., why should solitary animals suffer because they do not engage in romantic love?). In fact, <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a> himself notes that his list might only show the variety of valenced conditions instead of the intensity, and leaves this for further research.
+            <br/>The shared evolutionary history across species, and in connection to this, the function of hedonicity to (de)motivate behaviour are generally used to justify equal capacities across species (<a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning 2023</a>; <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak 2022</a>).
+
+            <br/><br/>If different welfare capacities are assumed, it is possible to either normalise measured welfare to the species-specific minimum and maximum levels, or to compare absolute values across species.
+            <br/>In the literature, different terminology exists to describe normalisation: <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> call it the “maximum principle” (p.279), <a href="https://www.frontiersin.org/articles/10.3389/fanim.2022.1062458">Gaffney et al. (2023)</a> describe it as “species-relativized welfare impacts” (p.5), and <a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> refers to normalisation as the “[s]imilarity in capacity assumption” (p.537). The latter wording seems to be counterintuitive, but it encapsulates what <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> criticise about normalisation: normalisation wipes out differences between species because, even if absolute welfare levels differ vastly, two individuals may still be considered equally well-off if species-normalised values are used for comparison.
+            <br/><a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> and <a href="https://masalladelaespecie.files.wordpress.com/2010/05/questions_priority_interspecies.pdf">Horta (2010)</a> review specific methods for normalisation that differ with regards to which minimum and maximum values exactly are used (e.g., <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1088-4963.1996.tb00074.x">McMahan’s (1996)</a> native potential account).
+            <br/><br/>The following studies normalise (hypothetical) measured welfare levels to welfare capacities: <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>; <a href="https://www.frontiersin.org/articles/10.3389/fanim.2022.1062458">Gaffney et al. (2023)</a>.</td>
     </tr>
 </table>
 
 <table id="p-12-2" style="border-spacing: 0 1em;display:none">
     <tr>
-        <td></td>
+        <td>Presuming hedonism, <a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> and <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> consider equal capacities as the main view in animal science, grounded in structural and functional similarities of pleasure and pain/suffering.
+            <br/><br/>For preferentialism, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> argues on a conceptual level that this must be connected to equal capacities because welfare is determined solely by whether preferences are fulfilled, which has the same meaning across species.
+            <br/>This stands in contrast to <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> who combine preferentialism and different capacities based on preferences over different functionings, assuming that individuals are indifferent about functionings they cannot attain due to their species-membership.
+            <br/><br/>For the objective-good concept of welfare, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> points out that certain goods (e.g., physical health) may be attained by animals and humans to the same extent, which would lead to the assumption of equal capacities.
+        </td>
     </tr>
 </table>
 
 <table id="p-12-3" style="border-spacing: 0 1em;display:none">
     <tr>
-        <td></td>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S0921800923002884">Espinosa and Treich (2024c)</a>; <a href="https://link.springer.com/article/10.1007/s00355-023-01451-9">Kuruc and McFadden (2023)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4309200">Eichner and Runkel (2022)</a>; <a href="https://budolfson.github.io/files/ZuberSpearsBudolfsonAnimalsSeparability.pdf">Zuber et al. (2022)</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0921800917304639">Johansson-Stenman (2018)</a>; <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>; <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>; <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>.</td>
     </tr>
 </table>
 
