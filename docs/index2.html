@@ -5,36 +5,36 @@
     <title>Checklist for Animal Welfare in Policy Evaluations</title>
 
     <script type="text/javascript">
-        function showFirstHideOthers(first, second, third, fourth) {
+       function showFirstHideOthers2(first, second) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio2(first, second, radio) {
+            showFirstHideOthers2(first, second);
+            document.getElementById(radio).checked = true;
+        }
+
+        function showFirstHideOthers3(first, second, third) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+            document.getElementById(third).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio3(first, second, third, radio) {
+            showFirstHideOthers3(first, second, third);
+            document.getElementById(radio).checked = true;
+        }
+
+        function showFirstHideOthers4(first, second, third, fourth) {
             document.getElementById(first).style.display = '';
             document.getElementById(second).style.display = 'none';
             document.getElementById(third).style.display = 'none';
             document.getElementById(fourth).style.display = 'none';
         }
 
-        function showFirstHideOthersSelectRadio(first, second, third, fourth, radio) {
-            showFirstHideOthers(first, second, third, fourth);
-            document.getElementById(radio).checked = true;
-        }
-
-        function showFirstHideOthers2(first, second, third) {
-            document.getElementById(first).style.display = '';
-            document.getElementById(second).style.display = 'none';
-            document.getElementById(third).style.display = 'none';
-        }
-
-        function showFirstHideOthersSelectRadio2(first, second, third, radio) {
-            showFirstHideOthers2(first, second, third);
-            document.getElementById(radio).checked = true;
-        }
-
-       function showFirstHideOthers3(first, second) {
-            document.getElementById(first).style.display = '';
-            document.getElementById(second).style.display = 'none';
-        }
-
-        function showFirstHideOthersSelectRadio3(first, second, radio) {
-            showFirstHideOthers3(first, second);
+        function showFirstHideOthersSelectRadio4(first, second, third, fourth, radio) {
+            showFirstHideOthers4(first, second, third, fourth);
             document.getElementById(radio).checked = true;
         }
     </script>
@@ -68,17 +68,17 @@
 
 <table>
     <tr>
-        <td><input id="r-11-1" onclick="showFirstHideOthers('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4', 'r-11-1')" style="padding-right:3em"><b>Experientialism / Hedonism</b> <br/>Welfare is determined by what the individual experiences.<br/>Most common form: hedonism (feelings of pleasure or harm/suffering determine welfare).</td>
+        <td><input id="r-11-1" onclick="showFirstHideOthers4('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4', 'r-11-1')" style="padding-right:3em"><b>Experientialism / Hedonism</b> <br/>Welfare is determined by what the individual experiences.<br/>Most common form: hedonism (feelings of pleasure or harm/suffering determine welfare).</td>
 
-        <td><input id="r-11-2" onclick="showFirstHideOthers('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4', 'r-11-2')" style="padding-right:3em"><b>Preferentialism</b> <br/>Fulfilment of the individual’s own preferences determines welfare.</td>
+        <td><input id="r-11-2" onclick="showFirstHideOthers4('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4', 'r-11-2')" style="padding-right:3em"><b>Preferentialism</b> <br/>Fulfilment of the individual’s own preferences determines welfare.</td>
 
-        <td><input id="r-11-3" onclick="showFirstHideOthers('p-11-3', 'p-11-1', 'p-11-2', 'p-11-4')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-3','p-11-1','p-11-2', 'p-11-4', 'r-11-3')" style="padding-right:3em"><b>Objective-good concept</b> <br/>Availability of certain goods determines welfare.</td>
+        <td><input id="r-11-3" onclick="showFirstHideOthers4('p-11-3', 'p-11-1', 'p-11-2', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-3','p-11-1','p-11-2', 'p-11-4', 'r-11-3')" style="padding-right:3em"><b>Objective-good concept</b> <br/>Availability of certain goods determines welfare.</td>
 
-        <td><input id="r-11-4" onclick="showFirstHideOthers('p-11-4', 'p-11-1', 'p-11-2', 'p-11-3')" type="radio" name="q11"></td>
-        <td onclick="showFirstHideOthersSelectRadio('p-11-4','p-11-1','p-11-2', 'p-11-3', 'r-11-4')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with all concepts of welfare.</td>
+        <td><input id="r-11-4" onclick="showFirstHideOthers4('p-11-4', 'p-11-1', 'p-11-2', 'p-11-3')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-4','p-11-1','p-11-2', 'p-11-3', 'r-11-4')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with all concepts of welfare.</td>
     </tr>
 </table>
 
@@ -128,14 +128,14 @@
 
 <table>
     <tr>
-        <td><input id="r-12-1" onclick="showFirstHideOthers2('p-12-1', 'p-12-2', 'p-12-3')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
+        <td><input id="r-12-1" onclick="showFirstHideOthers3('p-12-1', 'p-12-2', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
 
-        <td><input id="r-12-2" onclick="showFirstHideOthers2('p-12-2', 'p-12-1', 'p-12-3')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
+        <td><input id="r-12-2" onclick="showFirstHideOthers3('p-12-2', 'p-12-1', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
 
-        <td><input id="r-12-3" onclick="showFirstHideOthers2('p-12-3', 'p-12-1', 'p-12-2')" type="radio" name="q12"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-12-3','p-12-1','p-12-2', 'r-12-3')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with different or equal welfare capacity.</td>
+        <td><input id="r-12-3" onclick="showFirstHideOthers3('p-12-3', 'p-12-1', 'p-12-2')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-12-3','p-12-1','p-12-2', 'r-12-3')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with different or equal welfare capacity.</td>
     </tr>
 </table>
 
@@ -186,14 +186,14 @@
 
 <table>
     <tr>
-        <td><input id="r-13-1" onclick="showFirstHideOthers2('p-13-1', 'p-13-2', 'p-13-3')" type="radio" name="q13"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-13-1', 'p-13-2', 'p-13-3', 'r-13-1')" style="padding-right:3em"><b>Resource- or management-based indicators</b></td>
+        <td><input id="r-13-1" onclick="showFirstHideOthers3('p-13-1', 'p-13-2', 'p-13-3')" type="radio" name="q13"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-13-1', 'p-13-2', 'p-13-3', 'r-13-1')" style="padding-right:3em"><b>Resource- or management-based indicators</b></td>
 
-        <td><input id="r-13-2" onclick="showFirstHideOthers2('p-13-2', 'p-13-1', 'p-13-3')" type="radio" name="q13"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-13-2', 'p-13-1', 'p-13-3', 'r-13-2')" style="padding-right:3em"><b>Animal-based indicators: preferences</b></td>
+        <td><input id="r-13-2" onclick="showFirstHideOthers3('p-13-2', 'p-13-1', 'p-13-3')" type="radio" name="q13"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-13-2', 'p-13-1', 'p-13-3', 'r-13-2')" style="padding-right:3em"><b>Animal-based indicators: preferences</b></td>
 
-        <td><input id="r-13-3" onclick="showFirstHideOthers2('p-13-3', 'p-13-1', 'p-13-2')" type="radio" name="q13"></td>
-        <td onclick="showFirstHideOthersSelectRadio2('p-13-3','p-13-1','p-13-2', 'r-13-3')" style="padding-right:3em"><b>Animal-based indicators: other</b></td>
+        <td><input id="r-13-3" onclick="showFirstHideOthers3('p-13-3', 'p-13-1', 'p-13-2')" type="radio" name="q13"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-13-3','p-13-1','p-13-2', 'r-13-3')" style="padding-right:3em"><b>Animal-based indicators: other</b></td>
     </tr>
 </table>
 
@@ -229,11 +229,11 @@
 
 <table>
     <tr>
-        <td><input id="r-14-1" onclick="showFirstHideOthers3('p-14-1', 'p-14-2')" type="radio" name="q14"></td>
-        <td onclick="showFirstHideOthersSelectRadio3('p-14-1', 'p-14-2', 'r-14-1')" style="padding-right:3em"><b>Yes, threshold exists</b></td>
+        <td><input id="r-14-1" onclick="showFirstHideOthers2('p-14-1', 'p-14-2')" type="radio" name="q14"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-14-1', 'p-14-2', 'r-14-1')" style="padding-right:3em"><b>Yes, threshold exists</b></td>
 
-        <td><input id="r-14-2" onclick="showFirstHideOthers3('p-14-2', 'p-14-1')" type="radio" name="q14"></td>
-        <td onclick="showFirstHideOthersSelectRadio3('p-14-2', 'p-14-1', 'r-14-2')" style="padding-right:3em"><b>No, threshold does not exist</b></td>
+        <td><input id="r-14-2" onclick="showFirstHideOthers2('p-14-2', 'p-14-1')" type="radio" name="q14"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-14-2', 'p-14-1', 'r-14-2')" style="padding-right:3em"><b>No, threshold does not exist</b></td>
     </tr>
 </table>
 
