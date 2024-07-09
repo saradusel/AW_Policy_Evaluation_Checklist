@@ -2,11 +2,496 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Animal Welfare Checklist</title>
+    <title>Checklist for Animal Welfare in Policy Evaluations</title>
+
+    <script type="text/javascript">
+        function showFirstHideOthers(first) {
+            document.getElementById(first).style.display = '';
+        }
+
+        function showFirstHideOthersSelectRadio(first, radio) {
+            showFirstHideOthers(first);
+            document.getElementById(radio).checked = true;
+        }
+
+        function showFirstHideOthers2(first, second) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio2(first, second, radio) {
+            showFirstHideOthers2(first, second);
+            document.getElementById(radio).checked = true;
+        }
+
+        function showFirstHideOthers3(first, second, third) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+            document.getElementById(third).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio3(first, second, third, radio) {
+            showFirstHideOthers3(first, second, third);
+            document.getElementById(radio).checked = true;
+        }
+
+        function showFirstHideOthers4(first, second, third, fourth) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+            document.getElementById(third).style.display = 'none';
+            document.getElementById(fourth).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio4(first, second, third, fourth, radio) {
+            showFirstHideOthers4(first, second, third, fourth);
+            document.getElementById(radio).checked = true;
+        }
+    </script>
+
+    <noscript>
+        <h1 style="color:red">Please enable JavaScript to run this page.</h1>
+    </noscript>
 </head>
 <body>
 
-<h1>This website is under construction. Please try again later.</h1>
+<h1>Checklist for Animal Welfare in Policy Evaluations</h1>
+
+<p>The checklist covers the non-anthropocentric monetisation in CBA, and inclusion in SWF, of impacts on animals. It is based on a critical literature review.</p>
+
+<p>This version: 9 July 2024</p>
+
+<p>At this stage, the checklist only covers key findings of the critical literature review. Further details will be added over the next weeks. So, stay tuned!</p>
+
+<p>A working paper is forthcoming and will be available under: <a href="http://opus.uni-hohenheim.de/schriftenreihen_ebene2.php?sr_id=2&la=de">http://opus.uni-hohenheim.de/schriftenreihen_ebene2.php?sr_id=2&la=de</a></p>
+
+<p>Your feedback is welcome!</p>
+
+<p>Contact: <a href="mailto:sara.dusel@uni-hohenheim.de">sara.dusel@uni-hohenheim.de</a>
+<br/>X/Twitter: <a href="https://www.twitter.com/saradusel">@SaraDusel</a></p>
+
+<h1>The Checklist</h1>
+
+<h2>1. How should welfare be measured?</h2>
+
+<h3>1.1. Which fundamental concept of welfare should be adopted?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-11-1" onclick="showFirstHideOthers4('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4', 'r-11-1')" style="padding-right:3em"><b>Experientialism / Hedonism</b> <br/>Welfare is determined by what the individual experiences.<br/>Most common form: hedonism (feelings of pleasure or harm/suffering determine welfare).</td>
+
+        <td><input id="r-11-2" onclick="showFirstHideOthers4('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4', 'r-11-2')" style="padding-right:3em"><b>Preferentialism</b> <br/>Fulfilment of the individual’s own preferences determines welfare.</td>
+
+        <td><input id="r-11-3" onclick="showFirstHideOthers4('p-11-3', 'p-11-1', 'p-11-2', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-3','p-11-1','p-11-2', 'p-11-4', 'r-11-3')" style="padding-right:3em"><b>Objective-good concept</b> <br/>Availability of certain goods determines welfare.</td>
+
+        <td><input id="r-11-4" onclick="showFirstHideOthers4('p-11-4', 'p-11-1', 'p-11-2', 'p-11-3')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio4('p-11-4','p-11-1','p-11-2', 'p-11-3', 'r-11-4')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with all concepts of welfare.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-11-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Hedonism is adopted in the most advanced studies in the field, those that include a parameterised example: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://link.springer.com/article/10.1007/s00355-023-01451-9">Kuruc and McFadden (2023)</a>; <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>.<br/>Besides, general framework for hedonism: <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a></td>
+    </tr>
+    <tr>
+        <td><b><u>Criticism:</u></b>
+            <br/><a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> criticise hedonism for being “partly anthropocentric” (p.271) because mental states matter a lot to humans, but this may not be true for other species. Hence, humans receive implicit priority over other species (<i>ibid.</i>).<br/>On the contrary, <a href="https://rethinkpriorities.org/publications/theories-of-welfare-and-welfare-range-estimates">Fischer (2022)</a> argues that it would not make much of a difference to adopt an objective-good concept instead of hedonism because, even if other goods were included, hedonic goods (especially, pain!) would be most important by far for all species.</td>
+    </tr>
+</table>
+
+<table id="p-11-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Theoretical frameworks for preference-based non-anthropocentric CBA or SWF: <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>, <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a>, <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>, <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>. These frameworks are rather basic and not yet connected to actual findings from animal experiments.</td>
+    </tr>
+    <tr>
+        <td><b><u>Criticism:</u></b>
+            <br/><a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> finds preference-based approaches “far less convincing for animals” (p.535) than for humans, mainly because she suspects self-harming preferences in animals that, unlike for humans (e.g., smoking), could not be accounted for by defining a set of idealised rational preferences.<br/>However, <a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> does not provide convincing reasons why this should not be possible, she just posits that she cannot imagine idealised rational preferences could be defined for animals.<br/>Although <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> acknowledge the existence of problematic preferences in animals (as in humans), they consider it possible to account for them, only this work has not been done for animals yet. </td>
+    </tr>
+</table>
+
+<table id="p-11-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> has critically reviewed the objective-good approaches by <a href="https://global.oup.com/academic/product/how-to-count-animals-more-or-less-9780198829676?cc=de&lang=en&">Kagan (2019)</a> and <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1088-4963.1996.tb00074.x">McMahan (1996)</a>. She points out that these approaches may have very different implications depending on whether goods are included that animals and humans can attain to the same extent (e.g., health), or not (e.g., playing the piano). <br/>In this context, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> criticises the lack of commitment in the literature to any specific list of goods. <br/>Further, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> criticises that many of the proposed goods are more plausibly instrumental for experiencing pleasure (i.e., for hedonism) than that they are ends in themselves.
+            <br/><br/><a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> see the main advantage of the objective-good concept in its flexibility to account for differences between species (as compared to hedonism). They propose to apply weights to the goods depending on how important these are for different species. In their view, such weights should be informed by species’ preferences. In turn, rather than using preference-based weights for the objective-good concept, <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> suggest to adopt preferentialism altogether.
+        <br/><br/><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a> adopt a “hybrid approach mixing the hedonistic and objective list approach” (p.19). However, we do not consider this theoretically consistent because we take the welfare concepts as mutually exclusive. Instead, based on <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a>, we would characterise their approach as hedonism, using resource-based technical indicators to infer hedonic welfare states.</td>
+    </tr>
+</table>
+
+<table id="p-11-4" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Study with parameterised example: <a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a>
+            <br/><br/>General frameworks: <a href="https://www.sciencedirect.com/science/article/pii/S0921800923002884">Espinosa and Treich (2024c)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4309200">Eichner and Runkel (2022)</a>; <a href="https://budolfson.github.io/files/ZuberSpearsBudolfsonAnimalsSeparability.pdf">Zuber et al. (2022)</a>; <a href="https://www.researchwithrutgers.com/en/publications/public-policy-consequentialism-the-environment-and-nonhuman-anima">Budolfson and Spears (2020)</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0921800917304639">Johansson-Stenman (2018)</a>; <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>.
+        </td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>1.2. Does the capacity for welfare differ between species?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-12-1" onclick="showFirstHideOthers3('p-12-1', 'p-12-2', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-12-1', 'p-12-2', 'p-12-3', 'r-12-1')" style="padding-right:3em"><b>Yes, different capacity</b> <br/>The minimum and maximum attainable level of welfare differs between species.</td>
+
+        <td><input id="r-12-2" onclick="showFirstHideOthers3('p-12-2', 'p-12-1', 'p-12-3')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-12-2', 'p-12-1', 'p-12-3', 'r-12-2')" style="padding-right:3em"><b>No, equal capacity</b> <br/>The minimum and maximum attainable level of welfare is the same across species.</td>
+
+        <td><input id="r-12-3" onclick="showFirstHideOthers3('p-12-3', 'p-12-1', 'p-12-2')" type="radio" name="q12"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-12-3','p-12-1','p-12-2', 'r-12-3')" style="padding-right:3em"><b>Not specified</b> <br/>Approach is compatible with different or equal welfare capacity.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-12-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Presuming hedonism, differences in the welfare capacity between species are justified with the biological underpinnings of pleasure and suffering in <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>; <a href="https://www.frontiersin.org/articles/10.3389/fanim.2022.1062458">Gaffney et al. (2023)</a>; <a href="https://rethinkpriorities.org/publications/differences-in-the-intensity-of-valenced-experience-across-species">Schukraft (2020a)</a>; <a href="https://www.researchwithrutgers.com/en/publications/public-policy-consequentialism-the-environment-and-nonhuman-anima">Budolfson and Spears (2020)</a>.
+            <br/>This may be related to differences in cognitive capacities (e.g., mental time travel), which may be positively or negatively correlated with welfare capacities, and/or to differences in emotional complexity (e.g., romantic love) (<a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer 2023</a>; <a href="https://rethinkpriorities.org/publications/differences-in-the-intensity-of-valenced-experience-across-species">Schukraft 2020a</a>).
+            <br/><a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a> checks one-by-one which of these cognitive or emotional features are present in different species and derives welfare capacities from this, while <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a>, and <a href="https://www.researchwithrutgers.com/en/publications/public-policy-consequentialism-the-environment-and-nonhuman-anima">Budolfson and Spears (2020)</a> rely on the number of cortical neurons to estimate welfare capacities.
+        <br/><br/><a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> assume different capacities within an objective-good or preferentialist concept of welfare.</td>
+    </tr>
+
+    <tr>
+        <td><b><u>Criticism:</u></b>
+            <br/>The number of cortical neurons as a basis for welfare capacities is strongly criticised (reviewed by <a href="https://forum.effectivealtruism.org/s/y5n47MfgrKvTLE3pw/p/Mfq7KxQRvkeLnJvoB">Shriver 2022</a>), and even those who apply it acknowledge this.
+            <br/>In the complex list by <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>, it can be criticised, based on <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022</a>) and <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a>, that some of the items are irrelevant for experiences of pleasure and harm across species (e.g., why should solitary animals suffer because they do not engage in romantic love?). In fact, <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a> himself notes that his list might only show the variety of valenced conditions instead of the intensity, and leaves this for further research.
+            <br/>The shared evolutionary history across species, and in connection to this, the function of hedonicity to (de)motivate behaviour are generally used to justify equal capacities across species (<a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning 2023</a>; <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak 2022</a>).
+
+            <br/><br/>If different welfare capacities are assumed, it is possible to either normalise measured welfare to the species-specific minimum and maximum levels, or to compare absolute values across species.
+            <br/>In the literature, different terminology exists to describe normalisation: <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> call it the “maximum principle” (p.279), <a href="https://www.frontiersin.org/articles/10.3389/fanim.2022.1062458">Gaffney et al. (2023)</a> describe it as “species-relativized welfare impacts” (p.5), and <a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> refers to normalisation as the “[s]imilarity in capacity assumption” (p.537). The latter wording seems to be counterintuitive, but it encapsulates what <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> criticise about normalisation: normalisation wipes out differences between species because, even if absolute welfare levels differ vastly, two individuals may still be considered equally well-off if species-normalised values are used for comparison.
+            <br/><a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> and <a href="https://masalladelaespecie.files.wordpress.com/2010/05/questions_priority_interspecies.pdf">Horta (2010)</a> review specific methods for normalisation that differ with regards to which minimum and maximum values exactly are used (e.g., <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1088-4963.1996.tb00074.x">McMahan’s (1996)</a> native potential account).
+            <br/><br/>The following studies normalise hypothetical measured welfare levels to welfare capacities: <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>; <a href="https://www.frontiersin.org/articles/10.3389/fanim.2022.1062458">Gaffney et al. (2023)</a>.</td>
+    </tr>
+</table>
+
+<table id="p-12-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Presuming hedonism, <a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> and <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> consider equal capacities as the main view in animal science, grounded in structural and functional similarities of pleasure and pain/suffering.
+            <br/><br/>For preferentialism, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> argues on a conceptual level that this must be connected to equal capacities because welfare is determined solely by whether preferences are fulfilled, which has the same meaning across species.
+            <br/>This stands in contrast to <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> who combine preferentialism and different capacities based on preferences over different functionings, assuming that individuals are indifferent about functionings they cannot attain due to their species-membership.
+            <br/><br/>For the objective-good concept of welfare, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> points out that certain goods (e.g., physical health) may be attained by animals and humans to the same extent, which would lead to the assumption of equal capacities.
+        </td>
+    </tr>
+</table>
+
+<table id="p-12-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S0921800923002884">Espinosa and Treich (2024c)</a>; <a href="https://link.springer.com/article/10.1007/s00355-023-01451-9">Kuruc and McFadden (2023)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4309200">Eichner and Runkel (2022)</a>; <a href="https://budolfson.github.io/files/ZuberSpearsBudolfsonAnimalsSeparability.pdf">Zuber et al. (2022)</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0921800917304639">Johansson-Stenman (2018)</a>; <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>; <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>; <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>1.3. Which indicators should be used to assess welfare?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-13-1" onclick="showFirstHideOthers3('p-13-1', 'p-13-2', 'p-13-3')" type="radio" name="q13"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-13-1', 'p-13-2', 'p-13-3', 'r-13-1')" style="padding-right:3em"><b>Resource- or management-based indicators</b></td>
+
+        <td><input id="r-13-2" onclick="showFirstHideOthers3('p-13-2', 'p-13-1', 'p-13-3')" type="radio" name="q13"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-13-2', 'p-13-1', 'p-13-3', 'r-13-2')" style="padding-right:3em"><b>Animal-based indicators: preferences</b></td>
+
+        <td><input id="r-13-3" onclick="showFirstHideOthers3('p-13-3', 'p-13-1', 'p-13-2')" type="radio" name="q13"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-13-3','p-13-1','p-13-2', 'r-13-3')" style="padding-right:3em"><b>Animal-based indicators: other</b></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-13-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4309200">Eichner and Runkel (2022)</a>: Inverse of stocking density (approximated by units of land input per animal)
+            <br/><br/><a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a> based on <a href="https://link.springer.com/article/10.1007/s11367-017-1420-x">Scherer et al. (2018)</a>: Number of days on pasture (cattle), stocking density (broilers, laying hens, pigs), transport time (cattle, broilers, laying hens, pigs)
+            <br/><br/>Five Freedoms (degree of violation according to expert assessment): <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a></td>
+    </tr>
+</table>
+
+<table id="p-13-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Willingness to turn down feed for other resources (only general framework, no actual findings from animal experiments): <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>, <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>, <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>.</td>
+    </tr>
+</table>
+
+<table id="p-13-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>The five-freedoms expert assessment approach by <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>, and <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a> implicitly includes animal-based information.
+            <br/>Other than that, the classical animal-based indicators (e.g., lameness) have not yet been introduced into the economic frameworks for non-anthropocentric monetisation in CBA, or inclusion in SWF, of impacts on animals.<br/>This is a severe drawback. Yet, in theory, all approaches would be compatible with animal-based indicators, just this has not been done yet.
+            <br/><br/>Of note, the complex indicator list by <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a> serves to estimate welfare capacities, not actual welfare at a specific point in time. Welfare capacities could be combined with resource-, management- or animal-based assessments of actual welfare.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>1.4. Does the measurement scale have a threshold below which life is not worth living? What is the welfare impact of slaughter and death in this context?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-14-1" onclick="showFirstHideOthers2('p-14-1', 'p-14-2')" type="radio" name="q14"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-14-1', 'p-14-2', 'r-14-1')" style="padding-right:3em"><b>Yes, threshold exists</b></td>
+
+        <td><input id="r-14-2" onclick="showFirstHideOthers2('p-14-2', 'p-14-1')" type="radio" name="q14"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-14-2', 'p-14-1', 'r-14-2')" style="padding-right:3em"><b>No, threshold does not exist</b></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-14-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><i>Following soon.</i></td>
+    </tr>
+</table>
+
+<table id="p-14-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><i>Following soon.</i></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h2>2. How should the welfare of individuals be aggregated to determine which policy is optimal for society?</h2>
+
+<h3>2.1. Should weights be used to give different ethical values to the species?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-21-1" onclick="showFirstHideOthers3('p-21-1', 'p-21-2', 'p-21-3')" type="radio" name="q21"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-21-1', 'p-21-2', 'p-21-3', 'r-21-1')" style="padding-right:3em"><b>No, differences between species are already accounted for in the measurement steps (part 1)</b></td>
+
+        <td><input id="r-21-2" onclick="showFirstHideOthers3('p-21-2', 'p-21-1', 'p-21-3')" type="radio" name="q21"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-21-2', 'p-21-1', 'p-21-3', 'r-21-2')" style="padding-right:3em"><b>Yes, weights should be applied based on empirical reasoning</b> <br/>Weights can be applied independently of the assumptions on equal or different welfare capacities (part 1).</td>
+
+        <td><input id="r-21-3" onclick="showFirstHideOthers3('p-21-3', 'p-21-1', 'p-21-2')" type="radio" name="q21"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-21-3','p-21-1','p-21-2', 'r-21-3')" style="padding-right:3em"><b>Yes, weights should be applied based ethical deliberation</b> <br/>Weights can be applied independently of the assumptions on equal or different welfare capacities (part 1).</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-21-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>It is passionately debated whether possible differences between the species should be accounted for in the measurement steps and/or whether additional weights should be used during aggregation (<a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak 2022</a>; <a href="https://rethinkpriorities.org/publications/comparisons-of-capacity-for-welfare-and-moral-status-across-species">Schukraft 2020b</a>; <a href="https://global.oup.com/academic/product/how-to-count-animals-more-or-less-9780198829676?cc=de&lang=en&">Kagan 2019</a>; <a href="https://link.springer.com/article/10.1007/s10806-018-9730-y">Horta 2018</a>; <a href="https://www.doi.org/10.1007/s10677-017-9829-7">Horta 2017</a>; <a href="https://masalladelaespecie.files.wordpress.com/2010/05/questions_priority_interspecies.pdf">Horta 2010</a>).
+            <br/>An important limitation of the reviewed literature is that none of the studies actually measure welfare across species, although methods have been proposed by <a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> and <a href="https://www.frontiersin.org/articles/10.3389/fanim.2022.1062458">Gaffney et al. (2023)</a>.
+            <br/>Instead, at best, expert assessments as in <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a> are used to assess welfare states but by design, these fail to capture any differences between species. Hence, to date, all studies in the field rely on additional weights.</td>
+    </tr>
+</table>
+
+<table id="p-21-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Weights based on the same empirical reasoning as for welfare capacities (step 1.2) are applied by <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>; <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>.
+            <br/>In fact, in these studies, the same weights are applied twice: First, to infer differences in welfare capacities between species. Then, welfare levels are normalised to the different capacities, which wipes out any differences between species (see part 1.2). But because the authors want to hold on to these differences, they apply the same weights again in the aggregation step. The authors themselves do not comment on this.
+            <br/><br/>In the studies by <a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a> and <a href="https://link.springer.com/article/10.1007/s11367-017-1420-x">Scherer et al. (2018)</a>, weights are only applied in the aggregation step.</td>
+    </tr>
+    <tr>
+        <td><b><u>Criticism:</u></b>
+            <br/>An important criticism of applying weights during aggregation is that these weights can overrule anything from the previous steps, which means that equal interests of individuals from different species do not receive equal consideration (<a href="https://link.springer.com/article/10.1007/s10806-018-9730-y">Horta 2018</a>; <a href="https://www.doi.org/10.1007/s10677-017-9829-7">Horta 2017</a>; <a href="https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=2113&context=bts">Horta 2016</a>).
+            <br/><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a> realise this themselves and mention that the same pain would be valued differently in their approach, depending on whether it is experienced by a pig or a human. They propose to apply equal weights to equal interests, but this is only a quick fix for a problem that arises from their normalisation approach (see part 1.2).
+            <br/>In contrast, <a href="https://global.oup.com/academic/product/how-to-count-animals-more-or-less-9780198829676?cc=de&lang=en&">Kagan (2019)</a> does not find it problematic to use weights during aggregation because in fact, if no weights are applied during aggregation but different capacities are inferred from species weights, this leads to the same results (also noted by <a href="https://rethinkpriorities.org/publications/comparisons-of-capacity-for-welfare-and-moral-status-across-species">Schukraft 2020b</a>).</td>
+    </tr>
+</table>
+
+<table id="p-21-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>; <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>, and <a href="https://link.springer.com/article/10.1007/s00355-023-01451-9">Kuruc and McFadden (2023)</a> introduce an additional weight in their approaches to titrate the level of  non-anthropocentrism in the analyses according to societal expectations.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>2.2. Which aggregation rules should be adopted?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-22-1" onclick="showFirstHideOthers3('p-22-1', 'p-22-2', 'p-22-3')" type="radio" name="q22"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-22-1', 'p-22-2', 'p-22-3', 'r-22-1')" style="padding-right:3em"><b>Utilitarianism</b> <br/>The only matter of interest is total welfare in society.</td>
+
+        <td><input id="r-22-2" onclick="showFirstHideOthers3('p-22-2', 'p-22-1', 'p-22-3')" type="radio" name="q22"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-22-2', 'p-22-1', 'p-22-3', 'r-22-2')" style="padding-right:3em"><b>Prioritarianism</b> <br/>Worse-off individuals receive priority, even if total welfare was maximised by giving priority to better-off individuals.</td>
+
+        <td><input id="r-22-3" onclick="showFirstHideOthers3('p-22-3', 'p-22-1', 'p-22-2')" type="radio" name="q22"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-22-3','p-22-1','p-22-2', 'r-22-3')" style="padding-right:3em"><b>Egalitarianism</b> <br/>Inequalities in the distribution of welfare between individuals should be reduced, even if this neither maximises total welfare nor prioritises the worse-off.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-22-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Total utilitarianism (sum of individuals is maximised): <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>; <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://link.springer.com/article/10.1007/s00355-023-01451-9">Kuruc and McFadden (2023)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4309200">Eichner and Runkel (2022)</a>; <a href="https://budolfson.github.io/files/ZuberSpearsBudolfsonAnimalsSeparability.pdf">Zuber et al. (2022)</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0921800917304639">Johansson-Stenman (2018)</a>; <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>; <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>
+            <br/><br/>Average utilitarianism (mean of individuals is maximised): <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://budolfson.github.io/files/ZuberSpearsBudolfsonAnimalsSeparability.pdf">Zuber et al. (2022)</a>
+            <br/><br/>Critical level utilitarianism (sum of values exceeding a certain threshold is maximised): <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>; <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>
+            <br/><br/>Prior Existence Utilitarianism (sum of a specific set of individuals is maximised): <a href="https://dspace.library.uu.nl/handle/1874/207927">Višak (2011)</a>, <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a></td>
+    </tr>
+    <tr>
+        <td><i>Further details follow soon.</i></td>
+    </tr>
+</table>
+
+<table id="p-22-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Proposed by: <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>; <a href="https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=2113&context=bts">Horta (2016)</a>; <a href="https://www.dilemata.net/revista/index.php/dilemata/article/download/272/296">Faria (2014)</a></td>
+    </tr>
+    <tr>
+        <td><i>Further details follow soon.</i></td>
+    </tr>
+</table>
+
+<table id="p-22-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Proposed by: <a href="https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=2113&context=bts">Horta (2016)</a>; <a href="https://www.dilemata.net/revista/index.php/dilemata/article/download/272/296">Faria (2014)</a></td>
+    </tr>
+    <tr>
+        <td><i>Further details follow soon.</i></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>2.3. Should constraints be applied in addition to the aggregation rules?</h3>
+
+
+<table>
+    <tr>
+        <td><input id="r-23-1" onclick="showFirstHideOthers('p-23-1')" type="radio" name="q23"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-23-1', 'r-23-1')" style="padding-right:3em"><b>Bringing individuals into existence, preventing individuals from being brought into existence, or removing individuals is not a way to increase or decrease societal welfare</b></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-23-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Proposed by: <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a>; <a href="https://dspace.library.uu.nl/handle/1874/207927">Višak (2011)</a>; <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>2.4. Should human altruistic welfare (from knowing that animals are treated in a certain way) be included in addition to animal welfare?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-24-1" onclick="showFirstHideOthers2('p-24-1', 'p-24-2')" type="radio" name="q24"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-24-1', 'p-24-2', 'r-24-1')" style="padding-right:3em"><b>Yes, human altruistic welfare should be included</b></td>
+
+        <td><input id="r-24-2" onclick="showFirstHideOthers2('p-24-2', 'p-24-1')" type="radio" name="q24"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-24-2', 'p-24-1', 'r-24-2')" style="padding-right:3em"><b>No, human altruistic welfare should not be included</b></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-24-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><i>Following soon.</i></td>
+    </tr>
+</table>
+
+<table id="p-24-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><i>Following soon.</i></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h2>3. How should welfare units be converted into monetary units?</h2>
+
+<h3>3.1. Does the utility of money differ between species?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-31-1" onclick="showFirstHideOthers2('p-31-1', 'p-31-2')" type="radio" name="q31"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-31-1', 'p-31-2', 'r-31-1')" style="padding-right:3em"><b>Yes, different utility of money.</b> <br/>The value individuals place on receiving 1€ differs between species.</td>
+
+        <td><input id="r-31-2" onclick="showFirstHideOthers2('p-31-2', 'p-31-1')" type="radio" name="q31"></td>
+        <td onclick="showFirstHideOthersSelectRadio2('p-31-2', 'p-31-1', 'r-31-2')" style="padding-right:3em"><b>No, same utility of money.</b> <br/>1€ is worth the same to all species.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-31-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><i>Following soon.</i></td>
+    </tr>
+</table>
+
+<table id="p-31-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><i>Following soon.</i></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>3.2. What is the basis for monetisation? (including selected example calculations)</h3>
+
+<table>
+    <tr>
+        <td><input id="r-32-1" onclick="showFirstHideOthers3('p-32-1', 'p-32-2', 'p-32-3')" type="radio" name="q32"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-32-1', 'p-32-2', 'p-32-3', 'r-32-1')" style="padding-right:3em"><b>Value of human Quality- or Disability-Adjusted Life Year (QALY, DALY)</b></td>
+
+        <td><input id="r-32-2" onclick="showFirstHideOthers3('p-32-2', 'p-32-1', 'p-32-3')" type="radio" name="q32"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-32-2', 'p-32-1', 'p-32-3', 'r-32-2')" style="padding-right:3em"><b>International poverty line ($1.90/day)</b></td>
+
+        <td><input id="r-32-3" onclick="showFirstHideOthers3('p-32-3', 'p-32-1', 'p-32-2')" type="radio" name="q32"></td>
+        <td onclick="showFirstHideOthersSelectRadio3('p-32-3','p-32-1','p-32-2', 'r-32-3')" style="padding-right:3em"><b>Market price of feed</b></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-32-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Applied by <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACDB">Budolfson et al. (2024)</a>; <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a>.</td>
+    </tr>
+    <tr>
+        <td><b><u>Example calculations:</u></b>
+            <br/><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a> based on QALY: Value of chicken‘s lifetime welfare (per head) in conventional farming (𝒗𝟏 = −𝟏𝟐𝟒 € or 𝒗𝟐 = −𝟑𝟒 €) and organic farming (𝒗𝟑 = −𝟏𝟐𝟏 € or 𝒗𝟒 = −𝟐 €) (two values each from sensitivity analysis; negative values mean negative welfare i.e., life not worth living)
+            <br/><br/><a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a> based on DALY: Compensation costs for conventional chicken‘s welfare loss (per kg meat): 𝒄 = 𝟐𝟐.𝟎𝟏 €
+        </td>
+    </tr>
+</table>
+
+<table id="p-32-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Applied by <a href="https://link.springer.com/article/10.1007/s00355-023-01451-9">Kuruc and McFadden (2023)</a>: External costs for conventional chicken‘s lifetime welfare (per kg meat): 𝒄 = 𝟒𝟏𝟎𝟔.𝟖𝟗 € (own calculation based on the study)</td>
+    </tr>
+</table>
+
+<table id="p-32-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Applied by <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>; <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>; <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>, but no parameterised examples</td>
+    </tr>
+</table>
 
 </body>
 </html>
+
