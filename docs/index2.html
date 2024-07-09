@@ -5,7 +5,16 @@
     <title>Checklist for Animal Welfare in Policy Evaluations</title>
 
     <script type="text/javascript">
-       function showFirstHideOthers2(first, second) {
+        function showFirstHideOthers(first) {
+            document.getElementById(first).style.display = '';
+        }
+
+        function showFirstHideOthersSelectRadio(first, radio) {
+            showFirstHideOthers(first);
+            document.getElementById(radio).checked = true;
+        }
+
+        function showFirstHideOthers2(first, second) {
             document.getElementById(first).style.display = '';
             document.getElementById(second).style.display = 'none';
         }
@@ -304,9 +313,32 @@
     </tr>
 </table>
 
-<h3>2.2. TBD </h3>
+<p></p>
+<p></p>
 
 <h3>2.2. TBD </h3>
+
+<h3>2.3. Should constraints be applied in addition to the aggregation rules?</h3>
+
+
+<table>
+    <tr>
+        <td><input id="r-23-1" onclick="showFirstHideOthers('p-23-1')" type="radio" name="q23"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-23-1', 'r-23-1')" style="padding-right:3em"><b>Yes, human altruistic welfare should be included</b></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-23-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a>; <a href="https://dspace.library.uu.nl/handle/1874/207927">Višak (2011)</a>; <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a></td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
 
 <h3>2.4. Should human altruistic welfare (from knowing that animals are treated in a certain way) be included in addition to animal welfare?</h3>
 
