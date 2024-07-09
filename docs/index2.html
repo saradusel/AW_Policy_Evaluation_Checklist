@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Checklist for Animal Welfare in Policy Evaluations</title>
+
+    <script type="text/javascript">
+        function showFirstHideOthers(first, second, third, fourth) {
+            document.getElementById(first).style.display = '';
+            document.getElementById(second).style.display = 'none';
+            document.getElementById(third).style.display = 'none';
+            document.getElementById(fourth).style.display = 'none';
+        }
+
+        function showFirstHideOthersSelectRadio(first, second, third, fourth, radio){
+            showFirstHideOthers(first, second, third, fourth);
+            document.getElementById(radio).checked = true;
+        }
+    </script>
+
+    <noscript>
+        <h1 style="color:red">Please enable JavaScript to run this page.</h1>
+    </noscript>
 </head>
 <body>
 
@@ -21,5 +39,93 @@
 <p>Contact: <a href="mailto:sara.dusel@uni-hohenheim.de">sara.dusel@uni-hohenheim.de</a>
 <br/>X/Twitter: <a href="https://www.twitter.com/saradusel">@SaraDusel</a></p>
 
+<h1>The Checklist</h1>
+
+<h2>1. How should welfare be measured?</h2>
+
+<h3>1.1. Which fundamental concept of welfare should be adopted?</h3>
+
+<table>
+    <tr>
+        <td><input id="r-11-1" onclick="showFirstHideOthers('p-11-1', 'p-11-2', 'p-11-3', , 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-1', 'p-11-2', 'p-11-3', 'p-11-4', 'r-11-1')" style="padding-right:3em"><b>Experimentalism / Hedonism</b> <br/> Welfare is determined by what the individual experiences.<br/>Most common form: hedonism (feelings of pleasure or harm/suffering determine welfare).</td>
+
+        <td><input id="r-11-2" onclick="showFirstHideOthers('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-2', 'p-11-1', 'p-11-3', 'p-11-4', 'r-11-2')" style="padding-right:3em"><b>Experimentalism</b> <br/> Fulfilment of the individual’s own preferences determines welfare.</td>
+
+        <td><input id="r-11-3" onclick="showFirstHideOthers('p-11-3', 'p-11-1', 'p-11-2', 'p-11-4')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-3','p-11-1','p-11-2', 'p-11-4' 'r-11-3')" style="padding-right:3em"><b>Objective-good</b> <br/> Availability of certain goods determines welfare.</td>
+
+        <td><input id="r-11-4" onclick="showFirstHideOthers('p-11-4', 'p-11-1', 'p-11-2', 'p-11-3')" type="radio" name="q11"></td>
+        <td onclick="showFirstHideOthersSelectRadio('p-11-4','p-11-1','p-11-2', 'p-11-3', 'r-11-4')" style="padding-right:3em"><b>Not specified</b> <br/> Approach is compatible with all concepts of welfare.</td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<table id="p-11-1" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Hedonism is adopted in the most advanced studies in the field, those that include a parameterised example: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a>; <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2024/wp_tse_1503.pdf">Espinosa and Treich (2024b)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113271">Espinosa (2023)</a>; <a href="https://link.springer.com/article/10.1007/s00355-023-01451-9">Kuruc and McFadden (2023)</a>; <a href="https://rethinkpriorities.org/publications/welfare-range-estimates">Fischer (2023)</a>.<br/>Besides, general framework for hedonism: <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a></td>
+    </tr>
+    <tr>
+        <td><b><u>Criticism:</u></b>
+            <br/><a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> criticise hedonism for being “partly anthropocentric” (p.271) because mental states matter a lot to humans, but this may not be true for other species. Hence, humans receive implicit priority over other species (<i>ibid.</i>).<br/>On the contrary, <a href="https://rethinkpriorities.org/publications/theories-of-welfare-and-welfare-range-estimates">Fischer (2022)</a> argues that it would not make much of a difference to adopt an objective-good concept instead of hedonism because, even if other goods were included, hedonic goods (especially, pain!) would be most important by far for all species.</td>
+    </tr>
+</table>
+
+<table id="p-11-2" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Theoretical frameworks for preference-based non-anthropocentric CBA or SWF: <a href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/monetizing-animal-welfare-impacts-for-benefitcost-analysis/4558DB0D80DA18D4DC25788E967C0ACD">Budolfson et al. (2024)</a>, <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a>, <a href="https://academic.oup.com/erae/article/39/2/189/465316">Lusk and Norwood (2012)</a>, <a href="https://www.uni-goettingen.de/de/document/download/f32f091fb122f56fc9b49fa0e58045b0.pdf/Diskussionsbeitrag_Endfassung.pdf">Marggraf et al. (2012)</a>. These frameworks are rather basic and not yet connected to actual findings from animal experiments.</td>
+    </tr>
+    <tr>
+        <td><b><u>Criticism:</u></b>
+            <br/><a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> finds preference-based approaches “far less convincing for animals” (p.535) than for humans, mainly because she suspects self-harming preferences in animals that, unlike for humans (e.g., smoking), could not be accounted for by defining a set of idealised rational preferences.<br/>However, <a href="https://link.springer.com/article/10.1007/s11098-022-01907-1">Browning (2023)</a> does not provide convincing reasons why this should not be possible, she just posits that she cannot imagine idealised rational preferences could be defined for animals.<br/>Although <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> acknowledge the existence of problematic preferences in animals (as in humans), they consider it possible to account for them, only this work has not been done for animals yet. </td>
+    </tr>
+</table>
+
+<table id="p-11-3" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td><a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> has critically reviewed the objective-good approaches by <a href="https://global.oup.com/academic/product/how-to-count-animals-more-or-less-9780198829676?cc=de&lang=en&">Kagan (2019)</a> and <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1088-4963.1996.tb00074.x">McMahan (1996)</a>. She points out that these approaches may have very different implications depending on whether goods are included that animals and humans can attain to the same extent (e.g., health), or not (e.g., playing the piano). <br/>In this context, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> criticises the lack of commitment in the literature to any specific list of goods. <br/>Further, <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a> criticises that many of the proposed goods are more plausibly instrumental for experiencing pleasure (i.e., for hedonism) than that they are ends in themselves.
+            <br/><br/><a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> see the main advantage of the objective-good concept in its flexibility to account for differences between species (as compared to hedonism). They propose to apply weights to the goods depending on how important these are for different species. In their view, such weights should be informed by species’ preferences. In turn, rather than using preference-based weights for the objective-good concept, <a href="https://link.springer.com/article/10.1007/s10818-021-09315-x">Fleurbaey and Leppanen (2021)</a> suggest to adopt preferentialism altogether.
+        <br/><br/><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8489.12560">Espinosa and Treich (2024a)</a> adopt a “hybrid approach mixing the hedonistic and objective list approach” (p.19). However, we do not consider this theoretically consistent because we take the welfare concepts as mutually exclusive. Instead, based on <a href="https://global.oup.com/academic/product/capacity-for-welfare-across-species-9780192882202?cc=de&lang=en&">Višak (2022)</a>, we would characterise their approach as hedonism, using resource-based technical indicators to infer hedonic welfare states.</td>
+    </tr>
+</table>
+
+<table id="p-11-4" style="border-spacing: 0 1em;display:none">
+    <tr>
+        <td>Study with parameterised example: <a href="https://www.eurogroupforanimals.org/library/external-costs-animal-sourced-foods-eu">Rusman et al. (2023)</a>
+            <br/><br/>General frameworks: <a href="https://www.sciencedirect.com/science/article/pii/S0921800923002884">Espinosa and Treich (2024c)</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4309200">Eichner and Runkel (2022)</a>; <a href="https://budolfson.github.io/files/ZuberSpearsBudolfsonAnimalsSeparability.pdf">Zuber et al. (2022)</a>; <a href="https://www.researchwithrutgers.com/en/publications/public-policy-consequentialism-the-environment-and-nonhuman-anima">Budolfson and Spears (2020)</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0921800917304639">Johansson-Stenman (2018)</a>; <a href="https://www.jstor.org/stable/2234794">Blackorby and Donaldson (1992)</a>.
+        </td>
+    </tr>
+</table>
+
+<p></p>
+<p></p>
+
+<h3>1.2. Does the capacity for welfare differ between species?</h3>
+
+<h3>1.3. Which indicators should be used to assess welfare?</h3>
+
+<h3>1.4. Does the measurement scale have a threshold below which life is not worth living? What is the welfare impact of slaughter and death in this context?</h3>
+
+
+<h2>2. How should the welfare of individuals be aggregated to determine which policy is optimal for society?</h2>
+
+<h3>2.1. Should weights be used to give different ethical values to the species?</h3>
+
+<h3>2.2. TBD </h3>
+
+<h3>2.2. TBD </h3>
+
+<h3>2.4. Should human altruistic welfare (from knowing that animals are treated in a certain way) be included in addition to animal welfare?</h3>
+
+<h2>3. How should welfare units be converted into monetary units?</h2>
+
+<h3>3.1. Does the utility of money differ between species?</h3>
+
+<h3>What is the basis for monetisation? (including selected example calculations)</h3>
+
 </body>
 </html>
+
